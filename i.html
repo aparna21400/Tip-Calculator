@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="calculator">
+    <button id="toggleTime" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+
+        <h2><i class="fa-solid fa-money-bill-wave"></i> Tip Calculator</h2>
+        <select id="currency">
+            <option value="₹">₹ INR</option>
+            <option value="$">$ USD</option>
+            <option value="€">€ EUR</option>
+        </select>
+        <div>
+            <label>Bill Amount (₹): <input type="number" id="billAmount"></label>
+            <!--type="number": allows only numeric input.-->
+        </div>
+        <div>
+            <label>Tip Percentage (%): <input type="number" id="tipPercent"></label>
+            <!--id="tipPercent": use this in JS to read the user’s input.-->
+        </div>
+        <button onclick="calculate()">Calculate</button>
+
+        <h3 id="result"></h3><!--id="result": JS will use this to place the output here.-->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

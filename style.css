@@ -1,0 +1,126 @@
+body {
+    font-family: cursive;
+    background: linear-gradient(to right, #f7f0ff, #e0f7fa);
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Card container */
+.calculator {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+/* Headline */
+h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #6a1b9a;
+}
+
+/*  label and input */
+.calculator label {
+    display: block;
+    /*Makes label take full line width*/
+    margin-bottom: 12px;
+    /*Adds space below each label for breathing room.*/
+    font-weight: 600;
+    /*Makes label text a bit bold for emphasis.*/
+    color: #555;
+}
+
+.calculator input[type="number"] {
+    width: 100%;
+    /*Input fills (full line).*/
+    padding: 10px;
+    /*Adds space inside input for comfortable typing area.*/
+    margin-top: 6px;
+    /*Adds a little space(between label and input).*/
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    /*Ensures padding and border are included in width calculation (avoids overflow).*/
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* calculator button */
+.calculator button {
+    width: 50%;
+    background-color: #7b1fa2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    /*top,right,bottom,left*/
+}
+
+.calculator button:hover {
+    background-color: #0056b3;
+}
+
+/* Result text */
+#result {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+#result.warning {
+    color: #cc0000;
+    font-weight: 600;
+}
+body.dark-mode{
+    background: linear-gradient(to right, #121212, #1e1e1e);
+    color: #ffffff;
+}
+
+body.dark-mode .calculator {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.dark-mode input,
+.dark-mode button ,
+.dark-mode select{
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+@media  screen and (max-width:480px){
+    .calculator{
+        width: 90%;
+        padding: 20px;
+        margin-top: 60px;
+        border-radius: 12px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .calculator button{
+        width: 100%;
+        font-size: 16px;
+    }
+    .calculator input[input="number"]{
+        font-size: 14px;
+        padding:8px;
+
+    }
+    #result{
+        font-size: 18px;
+    }
+}
