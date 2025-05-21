@@ -35,9 +35,6 @@ A simple and clean web-based Tip Calculator that helps you quickly calculate the
 ---
 
 
-
-*(Screenshots hosted on GitHub — replace the URLs if you want to add your own)*
-
 ---
 
 ## License
